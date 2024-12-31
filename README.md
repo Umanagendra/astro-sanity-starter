@@ -1,116 +1,43 @@
-# Astro Netlify Sanity Starter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GlowGo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Elegance</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-![Astro Netlify Sanity Starter](https://assets.stackbit.com/docs/astro-sanity-starter-thumb.jpg)
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Where style meets sophistication</h2>
+        <a href="#shop" class="cta-button">Shop Now</a>
+    </section>
 
-[Live Demo](https://astro-sanity-starter-demo.netlify.app/)
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2>About Elegance</h2>
+        <p>Welcome to <strong>Elegance</strong>, where style meets sophistication. Our store is dedicated to offering the latest trends in fashion, providing a curated selection of clothing and accessories for both men and women. Whether you're looking for casual wear, formal attire, or statement pieces, <strong>Elegance</strong> brings you the finest quality fashion designed to make you look and feel your best. With a keen eye for detail and a passion for trends, we strive to bring you timeless pieces that blend modern style with classic elegance. Explore our collection today and experience fashion at its finest.</p>
+    </section>
 
-Netlify Astro and Sanity minimal starter with [visual editing](https://docs.netlify.com/visual-editor/overview/).
-
-| Prerequisites                                                                |
-| :--------------------------------------------------------------------------- |
-| [Node.js](https://nodejs.org/) v20.+                                         |
-| (optional) [nvm](https://github.com/nvm-sh/nvm) for Node version management. |
-
-## Getting Started
-
-Create local project from this repo and run:
-
-```txt
-npm install
-```
-
-### Sign Into Sanity
-
-If you are not already signed into Sanity via the CLI, install the CLI package and then run the login command.
-
-```txt
-npm install -g @sanity/cli
-sanity login
-```
-
-This will open a browser and walk you through the authentication process.
-
-### Import Content
-
-Once authenticated, you'll be able to create a Sanity project and import content.
-
-```txt
-npm run create-project
-```
-
-_Note: You may want to sign into Sanity in the browser and rename your project._
-
-Once the project exists and you've set the environment variables, you can import the content.
-
-```txt
-npm run import {projectId}
-```
-
-Replace `{projectId}` with the project ID output from the previous command.
-
-### Store Sanity Values
-
-Sign into Sanity to create an editor token, navigate to the following address (replace the `SANITY_PROJECT_ID` with your project ID) `https://www.sanity.io/manage/personal/project/SANITY_PROJECT_ID/api#tokens`. Then create `.env` file in you repo, copy & paste the following environment variables into the file and set their values.
-
-```txt
-SANITY_PROJECT_ID="..."
-SANITY_DATASET="..."
-SANITY_TOKEN="..."
-```
-
-### Run Sanity Studio
-
-Sanity Studio code exists for this project in the `studio` directory. First, install the dependencies in this directory.
-
-```txt
-cd studio
-npm install
-```
-
-Then create a `.env` file in the `studio` directory with the following environment variables and set their values:
-
-```txt
-SANITY_STUDIO_PROJECT_ID="..."
-SANITY_STUDIO_DATASET="..."
-```
-
-Then run the studio locally.
-
-```txt
-sanity dev
-```
-
-If you want to see the content, you can open your browser and navigate to localhost:3333.
-
-### Start Development Server
-
-Then you can run the Astro.js development server in root directory:
-
-```txt
-npm run dev
-```
-
-Install Netlify Visual Editor CLI:
-
-```txt
-npm install -g @stackbit/cli
-```
-
-And the Stackbit development server.
-
-```txt
-stackbit dev
-```
-
-This outputs your own Netlify Visual Editor URL. Open this, register or sign in, and you will be directed to Netlify Visual Editor for your new project.
-
-## Next Steps
-
-Here are a few suggestions on what to do next if you're new to Netlify Visual Editor:
-
-- Learn [how Netlify Visual Editor works](https://docs.netlify.com/visual-editor/concepts/how-visual-editor-works/)
-- Check [Netlify Visual Editor reference documentation](https://visual-editor-reference.netlify.com/)
-
-## Support
-
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Elegance Fashion Store | Contact: 7569224851</p>
+    </footer>
+</body>
+</html>
